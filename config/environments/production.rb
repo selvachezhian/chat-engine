@@ -76,8 +76,6 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  DATABASE_URL = 'heroku-postgres-de3dd61c.herokuapp.com'
-
   # Set logger to STDOUT for Unicorn logging
   config.logger = Logger.new(STDOUT)
   STDOUT.sync = true
