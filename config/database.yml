@@ -16,7 +16,7 @@
 #
 default: &default
   adapter: postgresql
-  encoding: utf-8
+  encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -83,6 +83,8 @@ test:
 #
 production:
   <<: *default
-  database: chat-engine_production
-  username: chat-engine
-  password: <%= ENV['CHAT-ENGINE_DATABASE_PASSWORD'] %>
+  host: ec2-54-204-42-135.compute-1.amazonaws.com
+  database: ddi8a9jff5ndj1
+  username: aipcyevaqfmxur
+  port: 5432
+  password: TsZltBjVvuiRc7U13LQig6ygOU
