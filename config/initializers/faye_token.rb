@@ -1,0 +1,1 @@
+FAYE_TOKEN = 'faye_token_123_321'

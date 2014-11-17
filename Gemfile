@@ -39,5 +39,7 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor'
+gem 'faye'
+gem 'thin'
 
 ruby '2.1.2'

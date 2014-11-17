@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'messages/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,5 +56,14 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  resources :users
+  resources :users do
+    collection do
+      get 'home'
+
+      post 'login'
+    end
+  end
+  resources :messages
+
+  root to: 'users#index'
 end

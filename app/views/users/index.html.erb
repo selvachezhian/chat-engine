@@ -1,1 +1,7 @@
-User Page
+<%= form_tag(login_users_path, method: :post) do %>
+    <ul>
+      <li>User Name <%= text_field_tag(:user_name) %></li>
+      <li>Password <%= password_field_tag(:password) %></li>
+      <li><%= submit_tag('Login') %></li>
+    </ul>
+<% end %>
